@@ -197,7 +197,21 @@ Edit `about.html`:
 
 - **Bio text:** Find the `<p class="lead">` tag
 - **Currently reading:** Update the book image, title, author, and quote in `.currently-reading-box`
-- **Profile picture:** Replace `assets/about/profile pic.jpg`
+- **Profile picture:** Replace `assets/About/profile pic.jpg`
+
+Note: The `About` folder is capitalized — GitHub Pages is case-sensitive!
+
+---
+
+## Updating the Resume Link
+
+The resume links directly to Google Drive and opens in a new tab. To update it, search and replace the Google Drive URL in all files:
+
+- `index.html` (2 places: nav and mobile menu)
+- `about.html` (2 places)
+- All project files in `projects/` (2 places each)
+
+The `resume.html` file is no longer used but kept as a fallback.
 
 ---
 
@@ -261,11 +275,12 @@ Edit `index.html`:
 ## Quick Fixes
 
 **Image not showing?**
-- Check the file path (case-sensitive!)
+- Check the file path (case-sensitive on GitHub Pages!)
+- Make sure folder names match exactly (e.g., `About` not `about`)
 - Spaces in paths need `%20` in URLs, but work fine in `src` attributes
 
 **Thumbnail cut off on mobile?**
 - Add a custom class in `styles.css` with mobile-specific `object-position`
 
 **Need to update resume link?**
-- Edit `resume.html` — change the URL in the meta refresh and JavaScript redirect
+- Search and replace the Google Drive URL across all HTML files (index, about, and all project pages)
