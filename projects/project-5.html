@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Billing | Elise Nguyen</title>
+    <meta name="description" content="UX case study: Helping customers be proactive about their spending with redesigned billing alerts.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://elisenguyen.com/projects/project-5.html">
+    <meta property="og:title" content="MongoDB Billing | Elise Nguyen">
+    <meta property="og:description" content="Helping customers be proactive about their spending with redesigned billing alerts.">
+    <meta property="og:image" content="https://elisenguyen.com/assets/Project%205/billing%20thumbnail.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MongoDB Billing | Elise Nguyen">
+    <meta name="twitter:description" content="Helping customers be proactive about their spending with redesigned billing alerts.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="progress-bar"></div>
+    <div class="gradient-bg muted"></div>
+    
+    <nav class="nav">
+        <a href="/" class="nav-logo">Elise Nguyen</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        <div class="nav-links">
+            <a href="/#work">Work</a>
+            <a href="/about.html">About</a>
+            <a href="/resume.html">Resume</a>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <a href="/#work">Work</a>
+        <a href="/about.html">About</a>
+        <a href="/resume.html">Resume</a>
+    </div>
+
+    <main>
+        <nav class="toc">
+            <ul class="toc-list">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#outcome">Outcome</a></li>
+                <li><a href="#design-process">Design Process</a></li>
+                <li><a href="#research-insights">Research Insights</a></li>
+                <li><a href="#design-goals">Design Goals</a></li>
+                <li><a href="#user-flow">User Flow</a></li>
+                <li><a href="#design-iterations">Design Iterations</a></li>
+                <li><a href="#user-testing">User Testing</a></li>
+                <li><a href="#reflection">Reflection</a></li>
+            </ul>
+        </nav>
+
+        <article class="case-study">
+            <header class="case-study-header">
+                <h1>MongoDB Billing</h1>
+                <p class="case-study-meta">Helping customers be proactive about their spending.</p>
+            </header>
+
+            <div class="case-study-hero">
+                <img src="../assets/Project 5/image.png" alt="MongoDB Billing">
+            </div>
+
+            <div class="case-study-content">
+                <!-- Overview -->
+                <section id="overview" class="case-study-section">
+                    <h2>Summary</h2>
+                    <p>
+                        MongoDB billing alerts help customers monitor their spending by notifying them when a certain condition (i.e. their bill is over $200) is met. However, the majority of MongoDB customers do not use this feature. As a product design intern, I worked on a design proposal to surface the billing alerts feature more clearly to drive adoption of MongoDB billing alerts, empowering MongoDB customers to make smarter financial decisions.
+                    </p>
+                    <div class="case-study-details">
+                        <div class="detail">
+                            <h3>Role</h3>
+                            <p>Product design intern</p>
+                        </div>
+                        <div class="detail">
+                            <h3>Timeline</h3>
+                            <p>3 months</p>
+                        </div>
+                        <div class="detail">
+                            <h3>Team</h3>
+                            <p>Individual with help from mentor and design team</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Problem -->
+                <section id="problem" class="case-study-section">
+                    <span class="section-label">Problem</span>
+                    <h2>Users overlook the billing alerts feature.</h2>
+                    <p>
+                        Using Amplitude analytics, we observed that only 7 customers on average click on the billing alerts call-to-action (CTA) button. Considering MongoDB has 26,800+ customers, it was clear that somehow the billing alerts CTA was being overlooked.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 5/image 1.png" alt="Analytics showing low engagement">
+                </figure>
+
+                <!-- Design Challenge -->
+                <section class="case-study-section">
+                    <span class="section-label">Design Challenge</span>
+                    <h2>How might we surface the billing alerts tip more clearly?</h2>
+                </section>
+
+                <!-- Solution -->
+                <section id="solution" class="case-study-section">
+                    <span class="section-label">Solution</span>
+                    <h2>Contextual billing alerts.</h2>
+                    <p>
+                        The previous billing alerts design was vague in both its visual design and messaging. In this redesign, you can see a specific alert example right where a user would find alert-worthy info. Moreover, the color, font-weight, and icons visually make this feature easier to find.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 5/image 2.png" alt="Contextual billing alerts redesign">
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>A scalable design system.</h2>
+                    <p>
+                        Placing alerts next to alert-worthy information meant that we had varying space to surface the billing alerts. Thus, I created a new design system that could scale based on how much visual space we might have to surface the alerts on a given page.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 5/image 3.png" alt="Scalable design system">
+                </figure>
+
+                <!-- Outcome -->
+                <section id="outcome" class="case-study-section">
+                    <span class="section-label">The Outcome</span>
+                    <h2>A redesign that allows users to be proactive about their spending.</h2>
+                    <p>
+                        By placing the link for setting up alerts close to alert-worthy information in the billing interface, and by designing a more friendly, eye-catching link, more users will be able to use billing alerts to proactively monitor their spending.
+                    </p>
+                </section>
+
+                <!-- Design Process -->
+                <section id="design-process" class="case-study-section">
+                    <span class="section-label">Design Process</span>
+                    <h2>User Interviews.</h2>
+                    <p>
+                        The research team prepared 9 semi-structured interviews with current MongoDB Atlas users who are actively involved in Billing management and/or setting up Billing Alerts for their organization. There were two main types of users: Sales-sold and Self-serve. The former usually has long-term financial commitments to MongoDB. The latter tends to spend as they need.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 5/image 4.png" alt="User interview types" style="background: transparent; border: none; box-shadow: none;">
+                </figure>
+
+                <!-- Research Insights -->
+                <section id="research-insights" class="case-study-section">
+                    <span class="section-label">Research Insights</span>
+                    <h2>1. Users want alerts to forecast a problem before it happens.</h2>
+                    <p>
+                        Right now, MongoDB billing alerts are focused on alerting customers when a problem has already happened. Users want to be able to fix issues before they happen.
+                    </p>
+                </section>
+
+                <section class="case-study-section">
+                    <h2>2. Users want more fine-tuned control over their spending.</h2>
+                    <p>
+                        Users can be in charge of many organizations, and many projects within those organizations. They want a way to monitor these different projects without having to constantly check each individual project and organization bill.
+                    </p>
+                </section>
+
+                <!-- Design Goals -->
+                <section id="design-goals" class="case-study-section">
+                    <span class="section-label">Design Goals</span>
+                    <h2>How might we enable users to make proactive, instead of reactive, decisions about their spending?</h2>
+                    <p>
+                        <strong>Give more context.</strong><br>
+                        A tip is only as useful as where it's placed - if a user sees a tip to set up an alert placed next to alert-worthy information (i.e. large changes in spending), they can set up an alert exactly when they need to.
+                    </p>
+                    <p>
+                        <strong>Create a visual design that stands out.</strong><br>
+                        Through user research, we found that users had a hard time finding the billing alerts tip card because it "looks the same as all the other cards on the page." Thus, to prompt users to set up alerts, we'll need to create a visual design that catches users' eye without distracting them from other important information on the page.
+                    </p>
+                    <p>
+                        <strong>Personalize alerts.</strong><br>
+                        Very few users know what billing alerts are. The majority of users want to know how billing alerts would be useful in their specific case. Our challenge is to figure out how we can dynamically show each user how billing alerts can help them be proactive about their spending.
+                    </p>
+                </section>
+
+                <!-- User Flow -->
+                <section id="user-flow" class="case-study-section">
+                    <span class="section-label">Current User Flow</span>
+                    <h2>1. User clicks on the billing alerts tip.</h2>
+                    <p>
+                        In the previous interface, the billing alerts feature was surfaced only once in a card on the bottom, right-hand side of the page. Through Amplitude analytics and user research on Atlas billing alerts, it was clear that users were not aware of Atlas's billing alerts.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 5/image 5.png" alt="Previous billing alerts interface">
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>2. User selects an alert condition.</h2>
+                    <p>
+                        When users click on the "set up alerts" button they will be led to this screen, where they can create a new alert. The user can select a condition like "Current bill for any single project is above $200." Here, users can track how much they spend and use this information to make more informed financial decisions for their organization.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 5/image 6.png" alt="Alert condition selection">
+                </figure>
+
+                <!-- Design Iterations -->
+                <section id="design-iterations" class="case-study-section">
+                    <span class="section-label">Design Iterations</span>
+                    <h2>Creating a new design system.</h2>
+                    <p>
+                        I started by brainstorming how a basic alert could look like in a 1-hour design studio with my mentor.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 5/image 7.png" alt="Initial brainstorm sketches">
+                </figure>
+
+                <section class="case-study-section">
+                    <p>
+                        From this initial brainstorm and through conducting a competitive audit of tips, I came up with a few possible tip designs:
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 5/image 8.png" alt="Tip design options">
+                </figure>
+
+                <section class="case-study-section">
+                    <p>
+                        After discussing with the product manager and fellow designers, I chose to move forward with the banner option as it called more attention than the link and tooltip, while still having the ability to be placed within existing card content, unlike the card option. Then, I explored iterations of the banner component focusing on varying its three main visual components:
+                    </p>
+                    <ul class="results-list">
+                        <li>Icon</li>
+                        <li>Color</li>
+                        <li>Call to action (CTA)</li>
+                    </ul>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 5/image 9.png" alt="Banner component iterations">
+                </figure>
+
+                <!-- User Testing -->
+                <section id="user-testing" class="case-study-section">
+                    <span class="section-label">User Testing</span>
+                    <h2>Validating my designs.</h2>
+                    <p>
+                        With these narrowed-down options, I wanted to see which resonated with users most. To do this, I conducted 8 unmoderated user tests using <a href="https://www.usertesting.com" target="_blank" rel="noopener">usertesting.com</a>.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 5/image 10.png" alt="User testing setup">
+                </figure>
+
+                <section class="case-study-section">
+                    <span class="section-label">User Insights</span>
+                    <h2>1. Users prefer context for alerts.</h2>
+                    <p>
+                        7 out of 8 users were unfamiliar with alerts. Yet, after users interacted with the alert option with extra context (through both text and placement), they understood the value proposition of alerts clearly: to monitor changes in spending.
+                    </p>
+                </section>
+
+                <section class="case-study-section">
+                    <h2>2. Users like visual design that stands out.</h2>
+                    <p>
+                        Visual design that stands out makes the alert easier to find. 75% of users preferred the blue banner option because the blue color stood on the page, but not too much like the purple color. They appreciated the call-to-action button as it "told [them] exactly what to do next." Since many users were unfamiliar with alerts, the extra context in the header of the banner, as opposed to just the subtext, helped them understand why alerts are useful.
+                    </p>
+                </section>
+
+                <section class="case-study-section">
+                    <span class="section-label">The Outcome</span>
+                    <h2>A redesign that allows users to be proactive about their spending.</h2>
+                    <p>
+                        From user research and additional conversations with the MongoDB design team, I was able to finalize my design proposal for billing alerts. By placing the link for setting up alerts close to alert-worthy information in the billing interface, and by designing a more friendly, eye-catching link, more users will be able to use billing alerts to proactively monitor their spending.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 5/image 11.png" alt="Final billing alerts design">
+                </figure>
+
+                <!-- Reflection -->
+                <section id="reflection" class="case-study-section">
+                    <span class="section-label">Reflection</span>
+                    <h2>What I learned</h2>
+                    <p>
+                        <strong>Experimenting with design</strong><br>
+                        With a more exploratory project that had few limitations, I got to experiment with the visual design of the alerts and break away from the design system a bit.
+                    </p>
+                    <p>
+                        <strong>Understand your users</strong><br>
+                        Doing user research was really helpful in understanding what users truly want and what really matters to them.
+                    </p>
+                    <p>
+                        <strong>Unmoderated user testing</strong><br>
+                        This was my first time doing unmoderated user testing and I realized just how much more context I need to include in my prototype when I can't interview users directly.
+                    </p>
+                </section>
+            </div>
+
+            <nav class="case-study-nav">
+                <a href="/projects/project-4.html" class="nav-prev">
+                    <div class="nav-text">
+                        <span>Previous</span>
+                        <strong>MyDiya</strong>
+                    </div>
+                    <div class="nav-thumb">
+                        <img src="../assets/Project 4/MyDiya thumbnail.png" alt="MyDiya">
+                    </div>
+                </a>
+                <a href="/projects/project-6.html" class="nav-next">
+                    <div class="nav-text">
+                        <span>Next</span>
+                        <strong>Disney</strong>
+                    </div>
+                    <div class="nav-thumb">
+                        <img src="../assets/Project 6/disney thumbnail.png" alt="Disney">
+                    </div>
+                </a>
+            </nav>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <a href="/">© 2026 Elise Nguyen</a>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        navToggle.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            navToggle.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                navToggle.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            });
+        });
+
+        const progressBar = document.querySelector('.progress-bar');
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            progressBar.style.width = scrollPercent + '%';
+
+            const nav = document.querySelector('.nav');
+            if (scrollTop > 100) {
+                nav.classList.add('hidden');
+            } else {
+                nav.classList.remove('hidden');
+            }
+
+            if (scrollTop > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Lightbox
+        const lightbox = document.createElement('div');
+        lightbox.className = 'lightbox';
+        lightbox.innerHTML = `
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</button>
+            <img src="" alt="">
+            <button class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</button>
+            <div class="lightbox-counter"></div>
+        `;
+        document.body.appendChild(lightbox);
+
+        const lightboxImg = lightbox.querySelector('img');
+        const lightboxClose = lightbox.querySelector('.lightbox-close');
+        const lightboxPrev = lightbox.querySelector('.lightbox-prev');
+        const lightboxNext = lightbox.querySelector('.lightbox-next');
+        const lightboxCounter = lightbox.querySelector('.lightbox-counter');
+
+        const allImages = Array.from(document.querySelectorAll('.case-study-gallery img, .case-study-image img, .case-study-hero img'));
+        let currentIndex = 0;
+
+        function showImage(index) {
+            currentIndex = index;
+            if (currentIndex < 0) currentIndex = allImages.length - 1;
+            if (currentIndex >= allImages.length) currentIndex = 0;
+            lightboxImg.src = allImages[currentIndex].src;
+            lightboxCounter.textContent = `${currentIndex + 1} / ${allImages.length}`;
+        }
+
+        allImages.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                showImage(index);
+                lightbox.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('open');
+            document.body.style.overflow = '';
+        });
+
+        lightboxPrev.addEventListener('click', () => showImage(currentIndex - 1));
+        lightboxNext.addEventListener('click', () => showImage(currentIndex + 1));
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('open')) return;
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+            if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
+            if (e.key === 'ArrowRight') showImage(currentIndex + 1);
+        });
+    </script>
+</body>
+</html>

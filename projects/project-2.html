@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Writing on Kindle | Elise Nguyen</title>
+    <meta name="description" content="UX case study: Designing the color writing experience for Kindle Scribe's debut e-ink color display.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://elisenguyen.com/projects/project-2.html">
+    <meta property="og:title" content="Color Writing on Kindle | Elise Nguyen">
+    <meta property="og:description" content="Designing the color writing experience for Kindle Scribe's debut e-ink color display.">
+    <meta property="og:image" content="https://elisenguyen.com/assets/Project%202/image%203.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Color Writing on Kindle | Elise Nguyen">
+    <meta name="twitter:description" content="Designing the color writing experience for Kindle Scribe's debut e-ink color display.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="progress-bar"></div>
+    <div class="gradient-bg muted"></div>
+    
+    <nav class="nav">
+        <a href="/" class="nav-logo">Elise Nguyen</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        <div class="nav-links">
+            <a href="/#work">Work</a>
+            <a href="/about.html">About</a>
+            <a href="/resume.html">Resume</a>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <a href="/#work">Work</a>
+        <a href="/about.html">About</a>
+        <a href="/resume.html">Resume</a>
+    </div>
+
+    <main>
+        <nav class="toc">
+            <ul class="toc-list">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#opportunity">Opportunity</a></li>
+                <li><a href="#design-challenge">Design Challenge</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#outcome">Outcome</a></li>
+                <li><a href="#design-challenge-1">Annotations</a></li>
+                <li><a href="#design-challenge-2">Color Switching</a></li>
+                <li><a href="#design-challenge-3">Templates</a></li>
+                <li><a href="#next-steps">Next Steps</a></li>
+                <li><a href="#learnings">Learnings</a></li>
+            </ul>
+        </nav>
+
+        <article class="case-study">
+            <header class="case-study-header">
+                <h1>Color Writing on Kindle</h1>
+                <p class="case-study-meta">Designing color writing and annotation experience for Kindle Scribe's debut e-ink color display.</p>
+            </header>
+
+            <div class="case-study-hero">
+                <video autoplay loop muted playsinline controls>
+                    <source src="../assets/Project 2/scribecolorsoftAUDIO.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="case-study-content">
+                <!-- Overview -->
+                <section id="overview" class="case-study-section">
+                    <h2>Summary</h2>
+                    <p>
+                        I owned the design for the color writing and annotation experience for Kindle Scribe's debut e-ink color display.
+                    </p>
+                    <div class="case-study-details">
+                        <div class="detail">
+                            <h3>Role</h3>
+                            <p>UX Designer</p>
+                        </div>
+                        <div class="detail">
+                            <h3>Timeline</h3>
+                            <p>7 months; <a href="https://www.aboutamazon.com/news/devices/new-amazon-kindle-scribe-color" target="_blank" rel="noopener">Launched</a></p>
+                        </div>
+                        <div class="detail">
+                            <h3>Team</h3>
+                            <p>Kindle UX, PM, and engineering teams</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Opportunity -->
+                <section id="opportunity" class="case-study-section">
+                    <span class="section-label">Opportunity</span>
+                    <h2>Kindle's first color writing device.</h2>
+                    <p>
+                        Kindle Color Scribe introduces color as a new medium for annotation, writing, and organization. I had an opportunity to define what color means on a device built around focus and simplicity: enabling richer ways to highlight, write, and structure ideas without compromising the calm, immersive reading experience Kindle is known for. This required designing a cohesive color system that worked seamlessly across annotations, writing tools, bookmarks, and templates, while scaling across devices and preserving ease of use.
+                    </p>
+                </section>
+
+                <!-- Design Challenge -->
+                <section id="design-challenge" class="case-study-section">
+                    <span class="section-label">Design Challenge</span>
+                    <h2>How might we introduce powerful color writing tools while still preserving the flow of deep reading and writing?</h2>
+                </section>
+
+                <!-- Solution -->
+                <section id="solution" class="case-study-section">
+                    <span class="section-label">Solution</span>
+                    <h2>Writing that feels just like pen and paper (with some digital upgrades).</h2>
+                    <p>
+                        Transform your ideas with color writing tools designed to feel as fluid and responsive as writing on paper. Configurable color slots in the writing toolbar enable one-tap switching between your most-used colors, while lasso select helps you make quick bulk color adjustments, keeping your focus on writing, not menus.
+                    </p>
+                </section>
+
+                <figure class="case-study-image inline-video">
+                    <video autoplay loop muted playsinline>
+                        <source src="../assets/Project 2/writingincolor.mp4" type="video/mp4">
+                    </video>
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>A powerful annotation experience that keeps you organized.</h2>
+                    <p>
+                        Highlight, underline, and annotate your favorite books in color to keep your thoughts organized and easy to revisit. A redesigned Contextual Action Bar (CAB) helps you edit multi-colored annotations with ease, while color and date filters let you quickly find what matters most. Bookmarks are supercharged with color for more organization and managing them requires just a couple taps.
+                    </p>
+                </section>
+
+                <figure class="case-study-image inline-video">
+                    <video autoplay loop muted playsinline>
+                        <source src="../assets/Project 2/annotate.mp4" type="video/mp4">
+                    </video>
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>Jumpstart your thinking with carefully curated templates.</h2>
+                    <p>
+                        Structure your ideas with an expanded template library designed for simplicity and versatility—whether you're a student, professional, or journaler. A redesigned template picker surfaces your most recently used templates first, helping you get started faster.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 2/image 3.png" alt="Templates">
+                </figure>
+
+                <!-- Outcome -->
+                <section id="outcome" class="case-study-section">
+                    <span class="section-label">Outcome</span>
+                    <h2>A color writing experience that turns color into a natural extension of thinking, not a distraction from it.</h2>
+                </section>
+
+                <div class="case-study-gallery top-align tall">
+                    <figure>
+                        <img src="../assets/Project 2/image 1.png" alt="Color writing tools">
+                    </figure>
+                    <figure>
+                        <img src="../assets/Project 2/image 2.png" alt="Annotation experience">
+                    </figure>
+                </div>
+
+                <section class="case-study-section">
+                    <h2>Impact.</h2>
+                    <p>
+                        The Kindle Scribe Colorsoft became available to purchase December 10, 2025. Here are some things people have been saying about it!
+                    </p>
+                    <blockquote>
+                        "<strong>Smooth writing feel. Easy to use.</strong> Color version adds a lot of fun for annotators who want to highlight books or take color-coded notes."
+                        <br><small>— <a href="https://www.wired.com/review/kindle-scribe-colorsoft-2025/" target="_blank" rel="noopener">Wired</a></small>
+                    </blockquote>
+                    <blockquote>
+                        "The writing and sketching experience is excellent. The screen responds instantly to the stylus, <strong>putting down lines just as if it were ink on paper…Taking notes is simple and easy</strong>."
+                        <br><small>— <a href="https://www.pcmag.com/reviews/amazon-kindle-scribe-colorsoft" target="_blank" rel="noopener">PCMag</a></small>
+                    </blockquote>
+                    <blockquote>
+                        "<strong>The software stays out of the way, which makes the device feel like a natural landing place for ideas</strong>...Color e-ink is still a compromise, but highlighting in actual yellow or annotating in red or blue makes margin notes feel more intentional."
+                        <br><small>— <a href="https://www.inc.com/jason-aten/what-amazons-new-flagship-kindle-scribe-colorsoft-gets-write/91276884" target="_blank" rel="noopener">Inc.</a></small>
+                    </blockquote>
+                    <blockquote>
+                        "<strong>Taking notes and highlighting passages (in color) while reading was a feature that I didn't know I wanted or needed.</strong>"
+                        <br><small>— <a href="https://www.goodhousekeeping.com/electronics/a69663613/amazon-kindle-scribe-colorsoft/" target="_blank" rel="noopener">Good Housekeeping</a></small>
+                    </blockquote>
+                </section>
+
+                <div class="case-study-gallery bottom-align">
+                    <figure>
+                        <a href="https://www.goodhousekeeping.com/electronics/a69663613/amazon-kindle-scribe-colorsoft/" target="_blank" rel="noopener">
+                            <img src="../assets/Project 2/image 4.png" alt="Good Housekeeping">
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="https://www.wired.com/review/kindle-scribe-colorsoft-2025/" target="_blank" rel="noopener">
+                            <img src="../assets/Project 2/image 5.png" alt="Wired">
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="https://www.tomsguide.com/computing/e-readers/kindle-scribe-colorsoft-2025-review" target="_blank" rel="noopener">
+                            <img src="../assets/Project 2/image 6.png" alt="Tom's Guide">
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="https://www.zdnet.com/article/amazon-kindle-scribe-colorsoft-review/" target="_blank" rel="noopener">
+                            <img src="../assets/Project 2/image 7.png" alt="ZDNet">
+                        </a>
+                    </figure>
+                </div>
+
+                <!-- Design Challenge #1 -->
+                <section id="design-challenge-1" class="case-study-section">
+                    <span class="section-label">Design Challenge #1</span>
+                    <h2>Adding color to annotations.</h2>
+                    <p>
+                        Annotations are a core Kindle interaction, so the in-book contextual action bar (CAB) had to feel almost invisible—powerful when needed, effortless when not. The challenge was fitting significantly more functionality (multiple annotation types and colors) into a space that was already constrained and frequently used. My goal was to minimize cognitive load while preserving fast, one-tap access to the most common actions, allowing readers to annotate and immediately return to reading.
+                    </p>
+                </section>
+
+                <figure class="case-study-image small">
+                    <img src="../assets/Project 2/image 8.png" alt="Original contextual action bar (CAB) design">
+                    <figcaption>Original contextual action bar (CAB) design</figcaption>
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>Iterating.</h2>
+                    <p>
+                        Early explorations tested multiple interaction models, including toggles, nested menus, and explicit delete actions. As complexity increased—especially once we discovered that highlights and underlines could coexist—I used design crits and usability principles to pressure-test each option. Designs that technically "worked" were often eliminated because they required too much scanning, too many decisions, or broke reading flow. This helped narrow the direction toward fewer visible actions with richer, context-specific submenus.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 2/image 9.png" alt="Iteration explorations">
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>Simplifying the menu.</h2>
+                    <p>
+                        One of the most important decisions was removing the explicit delete action from the main CAB and folding it into a "None" option within the color submenu. This reframed deletion as part of editing, not a separate mode, and significantly reduced visual noise. Similarly, highlight and underline were kept as first-class actions in the main CAB rather than being nested, making annotation types immediately scannable and reducing mental parsing time—despite concerns about long-term future-proofing. I aligned stakeholders on prioritizing clarity for today's core use cases, with a clear strategy for scaling later if new annotation types are introduced.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 2/image 10.png" alt="Simplified menu">
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>Designing cross-surface.</h2>
+                    <p>
+                        The CAB needed to flex across color and black-and-white devices, as well as platforms with different technical constraints. Rather than enforcing strict uniformity, I advocated for surface-appropriate designs that preserved the same mental model while adapting interaction patterns (e.g., toggles on B&W devices without color options). This added engineering complexity, but resulted in a simpler, more intuitive experience for each user group—a tradeoff I worked closely with PM and engineering partners to justify.
+                    </p>
+                </section>
+
+                <figure class="case-study-image" style="max-width: 600px;">
+                    <img src="../assets/Project 2/image 11.png" alt="Cross-surface design">
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>A powerful annotation experience that stays out of the way.</h2>
+                    <p>
+                        The redesigned Contextual Action Bar (CAB) enables fast, flexible annotation—supporting highlights and underlines in multiple colors—without interrupting reading flow. By surfacing the right actions at the right time and adapting across Kindle surfaces, the final design balances power and simplicity for one of the most core Kindle interactions. While we didn't have a single success metric for this feature, annotations were not flagged as a pain point during beta or launch, and CSAT scores from internal beta testing for color highlights and underlines were strong (6.14/7). Most importantly, users were able to access powerful annotation tools without breaking immersion—validating the core design goal.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 2/CAB.gif" alt="Final annotation design">
+                </figure>
+
+                <!-- Design Challenge #2 -->
+                <section id="design-challenge-2" class="case-study-section">
+                    <span class="section-label">Design Challenge #2</span>
+                    <h2>Identifying friction when switching colors.</h2>
+                    <p>
+                        User research and beta feedback consistently surfaced color switching as a pain point in the writing experience. While the existing color submenu worked functionally, it interrupted flow—especially for users who alternate frequently between a small set of colors. Research showed that most customers typically use only two or three colors in a session, which created an opportunity to optimize for speed without over-engineering.
+                    </p>
+                </section>
+
+                <figure class="case-study-image small">
+                    <img src="../assets/Project 2/image 13.png" alt="Color switching friction">
+                    <figcaption>Pen and highlighter color options are nested in a submenu within the writing toolbar, requiring multiple taps to switch color while writing.</figcaption>
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>Exploring solutions and evaluating tradeoffs.</h2>
+                    <p>I explored three primary directions:</p>
+                    <ol>
+                        <li><strong>Color slots</strong> offered the fastest switching with minimal cognitive load once learned, but required careful toolbar space management.</li>
+                        <li><strong>Pen presets</strong> bundled tool type and color together, but introduced setup complexity and reduced flexibility mid-session.</li>
+                        <li><strong>Floating palettes</strong> were the most immediately discoverable but covered writing space and introduced significant technical overhead.</li>
+                    </ol>
+                </section>
+
+                <figure class="case-study-image" style="max-width: 900px;">
+                    <img src="../assets/Project 2/image 14.png" alt="Solution explorations">
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>Validating our solution.</h2>
+                    <p>
+                        Through discussion and a focused design sprint with PM, engineering, and design, we aligned on color slots as the best balance of speed, simplicity, and feasibility—especially given late-stage timing. Internal beta results validated this approach: the writing experience achieved a <strong>customer satisfaction score of 6.10/7, with over 80% of testers rating pen color controls as easy or very easy to use</strong>. Importantly, users reported that writing in color felt just as fluid as black ink—confirming that we added expressive power without compromising performance or feel.
+                    </p>
+                </section>
+
+                <figure class="case-study-image" style="max-width: 700px;">
+                    <img src="../assets/Project 2/color switching gif.gif" alt="Validation results">
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>Designing for scalability.</h2>
+                    <p>
+                        Because the writing toolbar appears in multiple contexts, including constrained surfaces like sticky notes, the solution needed to scale. Color slots were intentionally designed as shortcuts rather than required tools, allowing them to be removed in space-limited views without breaking core functionality. This ensured the feature enhanced power users' workflows while preserving a clean baseline experience for the majority of users.
+                    </p>
+                </section>
+
+                <div class="case-study-gallery top-align">
+                    <figure>
+                        <img src="../assets/Project 2/image 16.png" alt="Final color slot design">
+                        <figcaption>Final color slot design</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../assets/Project 2/image 17.png" alt="Sticky note window design">
+                        <figcaption>Sticky note window design</figcaption>
+                    </figure>
+                </div>
+
+                <!-- Design Challenge #3 -->
+                <section id="design-challenge-3" class="case-study-section">
+                    <span class="section-label">Design Challenge #3</span>
+                    <h2>Templates: Grounding a subjective feature in research.</h2>
+                    <p>
+                        Templates are inherently personal, so rather than designing from taste or intuition, I partnered closely with the Kindle UX Research team to anchor decisions in user input. I compiled a longlist of potential templates informed by competitive analysis, existing Kindle usage, and student, professional, and reading-adjacent workflows. Users then ranked templates by likelihood of use and shared qualitative feedback on what made templates valuable—or distracting.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 2/image 18.png" alt="Template research">
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>What users actually wanted (and didn't).</h2>
+                    <p>
+                        Research revealed a clear pattern: users favored simple, versatile templates that supported many use cases over highly decorative or niche designs. Contrary to internal pressure to introduce more color, users consistently preferred black-and-white templates, citing reduced distraction and better focus on handwritten content. Customizability emerged as the strongest unmet need, reinforcing that templates should act as flexible scaffolding rather than prescriptive layouts.
+                    </p>
+                </section>
+
+                <div class="case-study-gallery top-align">
+                    <figure>
+                        <img src="../assets/Project 2/image 19.png" alt="User preferences 1">
+                    </figure>
+                    <figure>
+                        <img src="../assets/Project 2/image 20.png" alt="User preferences 2">
+                    </figure>
+                </div>
+
+                <section class="case-study-section">
+                    <h2>Designing within technical constraints.</h2>
+                    <p>
+                        Based on these insights, we added <strong>12 new, top-ranked templates</strong>, complemented by a small set of familiar colored options (e.g., college ruled, legal pad). Due to technical constraints—templates being static SVGs without localization support—we couldn't offer manual spacing or sizing controls. Instead, I designed multiple variations of existing templates to approximate customization and ensure usefulness across workflows. I also worked closely with engineering to ensure colored templates were backward compatible across black-and-white devices and Kindle apps on iOS and Android.
+                    </p>
+                </section>
+
+                <div class="case-study-gallery three-up">
+                    <figure>
+                        <img src="../assets/Project 2/image 21.png" alt="College Ruled">
+                        <figcaption>College Ruled</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../assets/Project 2/image 22.png" alt="Legal Pad">
+                        <figcaption>Legal Pad</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../assets/Project 2/image 23.png" alt="Weekly Planner">
+                        <figcaption>Weekly Planner</figcaption>
+                    </figure>
+                </div>
+
+                <section class="case-study-section">
+                    <h2>Making 30 templates feel manageable.</h2>
+                    <p>
+                        As the template library grew, discoverability became the next challenge. I explored sorting, tabs, and filters, but each added interaction cost and technical complexity.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 2/image 24.png" alt="Template picker explorations">
+                    <figcaption>Template picker explorations</figcaption>
+                </figure>
+
+                <section class="case-study-section">
+                    <p>
+                        The final solution—a "recently used" row at the top of the picker—optimized for speed and learnability without requiring extra taps or UI chrome. This approach aligned with real usage patterns and fit cleanly within the limited picker space. We were able to validate this solution in internal beta testing, where <strong>the highest rating within the Notebook CX was for creating notebooks with templates (93%), which users reported as "intuitive".</strong>
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 2/image 25.png" alt="Final template picker flow">
+                    <figcaption>Final template picker flow</figcaption>
+                </figure>
+
+                <!-- Implementation -->
+                <section class="case-study-section">
+                    <span class="section-label">Implementation</span>
+                    <h2>Adapting to device constraints.</h2>
+                    <p>
+                        After many design/leadership reviews and handing off the final specs to engineering, we still had to adapt designs because of newly-discovered technical constraints. A key example of this was with color bookmarks. <strong>While our early design relied on long-press to reveal color options, device-level grip suppression on screen edges blocked this interaction.</strong> I pivoted the design to move delete into the color submenu, aligning with existing Kindle app patterns and avoiding hidden gestures. Constraints like this required flexibility without compromising clarity or learnability.
+                    </p>
+                </section>
+
+                <figure class="case-study-image" style="max-width: 500px;">
+                    <img src="../assets/Project 2/image 26.png" alt="Device constraints adaptation">
+                </figure>
+
+                <!-- Launch -->
+                <section class="case-study-section">
+                    <span class="section-label">Outcome</span>
+                    <h2>Launch.</h2>
+                    <p>
+                        After internal beta testing, many bug-bashes, and final leadership reviews, the Kindle Scribe Colorsoft became available to order and ship on Amazon.com on December 10, 2025 (just in time for the holidays!).
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 2/image 27.png" alt="Launch">
+                </figure>
+
+                <!-- Next Steps -->
+                <section id="next-steps" class="case-study-section">
+                    <span class="section-label">Next Steps</span>
+                    <h2>What's next.</h2>
+                    <p>
+                        Post-launch, we're still working on delivering some features through post-launch software updates to improve the experience. Once we're finished delivering this, our goal is to continue user testing to identify areas where users might be struggling to use or underutilizing a tool. We also plan to expand our template variety and work to build the software necessary to allow more customization.
+                    </p>
+                </section>
+
+                <!-- Learnings -->
+                <section id="learnings" class="case-study-section">
+                    <span class="section-label">Learnings</span>
+                    <h2>What I learned.</h2>
+                    <p>
+                        Designing Kindle's first color writing device pushed me to <strong>define new interaction patterns</strong> and earn user trust while introducing color tools to a traditionally grayscale product. <strong>Working across surfaces deepened my systems thinking</strong> and forced me to become intentional about when to unify experiences across surfaces versus allowing divergence to best serve each context. Nearly every feature required tradeoffs—like showing versus hiding overlapping bookmarks or decorative versus utilitarian templates—which I navigated through design critiques, focused sprints, and documented rationale grounded in research and competitive analysis.
+                    </p>
+                    <p>
+                        Many features evolved rapidly as technical constraints surfaced or beta milestones approached, requiring me to spin up specs, decks, and reviews while validating direction and iterating as new information surfaced. A recurring theme throughout the project was <strong>reducing cognitive load and preserving flow</strong> in high-speed interactions. I focused on surfacing intent-driven actions while hiding complexity behind context-aware submenus, and I learned to <strong>treat technical constraints</strong>—like grip suppression disabling long press actions—<strong>as design inputs</strong>, adapting solutions to remain intuitive and user-centered.
+                    </p>
+                </section>
+            </div>
+
+            <nav class="case-study-nav">
+                <a href="/projects/project-1.html" class="nav-prev">
+                    <div class="nav-text">
+                        <span>Previous</span>
+                        <strong>Shop Goodreads on Amazon</strong>
+                    </div>
+                    <div class="nav-thumb">
+                        <img src="../assets/Project 1/thumbnail.png" alt="Shop Goodreads on Amazon">
+                    </div>
+                </a>
+                <a href="/projects/project-3.html" class="nav-next">
+                    <div class="nav-text">
+                        <span>Next</span>
+                        <strong>MongoDB Private Link</strong>
+                    </div>
+                    <div class="nav-thumb">
+                        <img src="../assets/Project%203/private%20link%20thumbnail.jpg" alt="MongoDB Private Link">
+                    </div>
+                </a>
+            </nav>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <a href="/">© 2026 Elise Nguyen</a>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        navToggle.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            navToggle.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                navToggle.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            });
+        });
+
+        const progressBar = document.querySelector('.progress-bar');
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            progressBar.style.width = scrollPercent + '%';
+
+            // Hide nav when scrolling, show only at top
+            const nav = document.querySelector('.nav');
+            if (scrollTop > 100) {
+                nav.classList.add('hidden');
+            } else {
+                nav.classList.remove('hidden');
+            }
+
+            if (scrollTop > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Lightbox with carousel functionality
+        const lightbox = document.createElement('div');
+        lightbox.className = 'lightbox';
+        lightbox.innerHTML = `
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</button>
+            <img src="" alt="">
+            <button class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</button>
+            <div class="lightbox-counter"></div>
+        `;
+        document.body.appendChild(lightbox);
+
+        const lightboxImg = lightbox.querySelector('img');
+        const lightboxClose = lightbox.querySelector('.lightbox-close');
+        const lightboxPrev = lightbox.querySelector('.lightbox-prev');
+        const lightboxNext = lightbox.querySelector('.lightbox-next');
+
+        const allImages = Array.from(document.querySelectorAll('.case-study-gallery img, .case-study-image img, .case-study-hero img, .photo-gallery img'));
+        let currentIndex = 0;
+
+        function showImage(index) {
+            currentIndex = index;
+            if (currentIndex < 0) currentIndex = allImages.length - 1;
+            if (currentIndex >= allImages.length) currentIndex = 0;
+            lightboxImg.src = allImages[currentIndex].src;
+            lightboxImg.alt = allImages[currentIndex].alt;
+        }
+
+        allImages.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                showImage(index);
+                lightbox.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightboxPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showImage(currentIndex - 1);
+        });
+
+        lightboxNext.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showImage(currentIndex + 1);
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target === lightboxClose) {
+                lightbox.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('open')) return;
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('open');
+                document.body.style.overflow = '';
+            } else if (e.key === 'ArrowLeft') {
+                showImage(currentIndex - 1);
+            } else if (e.key === 'ArrowRight') {
+                showImage(currentIndex + 1);
+            }
+        });
+
+        // Table of Contents active state
+        const tocLinks = document.querySelectorAll('.toc-list a');
+        const sections = document.querySelectorAll('.case-study-section[id]');
+
+        function updateTocActive() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateTocActive);
+        updateTocActive();
+    </script>
+</body>
+</html>

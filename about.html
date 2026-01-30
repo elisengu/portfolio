@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Elise Nguyen</title>
+    <meta name="description" content="Learn more about Elise Nguyen, a UX Designer at Amazon Kindle with experience at MongoDB, Disney, and Blue Yonder.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elisenguyen.com/about.html">
+    <meta property="og:title" content="About | Elise Nguyen">
+    <meta property="og:description" content="UX Designer at Amazon Kindle with experience at MongoDB, Disney, and Blue Yonder.">
+    <meta property="og:image" content="https://elisenguyen.com/assets/about/profile%20pic.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About | Elise Nguyen">
+    <meta name="twitter:description" content="UX Designer at Amazon Kindle with experience at MongoDB, Disney, and Blue Yonder.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="progress-bar"></div>
+    <div class="gradient-bg"></div>
+    
+    <nav class="nav">
+        <a href="/" class="nav-logo">Elise Nguyen</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        <div class="nav-links">
+            <a href="/#work">Work</a>
+            <a href="/about.html">About</a>
+            <a href="/resume.html">Resume</a>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <a href="/#work">Work</a>
+        <a href="/about.html">About</a>
+        <a href="/resume.html">Resume</a>
+    </div>
+
+    <main>
+        <section class="about-page">
+            <div class="about-hero">
+                <div class="about-image">
+                    <img src="assets/about/profile pic.jpg" alt="Elise Nguyen">
+                </div>
+                <div class="about-intro">
+                    <h1>About me</h1>
+                    <p class="lead" style="font-size: 1rem; font-weight: 300;">
+                        Hi 👋 I'm Elise, a UX Designer II at Amazon. Currently, I'm designing new writing features for our <a href="https://www.amazon.com/kindle/" target="_blank" rel="noopener" style="color: #4a9c6d;">Kindle e-reader products</a>. Previously, I interned at Amazon, MongoDB, Disney, and Blue Yonder.
+                    </p>
+                    
+                    <div class="currently-reading-box" style="margin-top: 1.5rem;">
+                        <h3>📚 Currently Reading</h3>
+                        <div class="book-content">
+                            <img src="assets/about/currently reading.jpg" alt="If Cats Disappeared from the World book cover">
+                            <div class="book-info">
+                                <p class="book-title">If Cats Disappeared from the World</p>
+                                <p class="book-author">by Genki Kawamura</p>
+                                <p class="book-quote">"Maybe there's no such thing as a life without meaning."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="contact-divider">☆</p>
+
+            <section class="contact-section">
+                <h2>Let's keep in touch!</h2>
+                <div class="contact-links">
+                    <a href="mailto:nguyenelise4@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/elisengu/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/elisengu" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="/">© 2026 Elise Nguyen</a>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        navToggle.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            navToggle.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                navToggle.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Progress bar
+        const progressBar = document.querySelector('.progress-bar');
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            progressBar.style.width = scrollPercent + '%';
+
+            // Hide/show nav on scroll (reappears when scrolling up)
+            const nav = document.querySelector('.nav');
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                nav.classList.add('hidden');
+            } else {
+                nav.classList.remove('hidden');
+            }
+            lastScrollTop = scrollTop;
+
+            if (scrollTop > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        let lastScrollTop = 0;
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

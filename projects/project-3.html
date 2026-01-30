@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Private Link | Elise Nguyen</title>
+    <meta name="description" content="UX case study: Enabling customers to connect to MongoDB products securely through Private Link.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://elisenguyen.com/projects/project-3.html">
+    <meta property="og:title" content="MongoDB Private Link | Elise Nguyen">
+    <meta property="og:description" content="Enabling customers to connect to MongoDB products securely through Private Link.">
+    <meta property="og:image" content="https://elisenguyen.com/assets/Project%203/private%20link%20thumbnail.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MongoDB Private Link | Elise Nguyen">
+    <meta name="twitter:description" content="Enabling customers to connect to MongoDB products securely through Private Link.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="progress-bar"></div>
+    <div class="gradient-bg muted"></div>
+    
+    <nav class="nav">
+        <a href="/" class="nav-logo">Elise Nguyen</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        <div class="nav-links">
+            <a href="/#work">Work</a>
+            <a href="/about.html">About</a>
+            <a href="/resume.html">Resume</a>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <a href="/#work">Work</a>
+        <a href="/about.html">About</a>
+        <a href="/resume.html">Resume</a>
+    </div>
+
+    <main>
+        <nav class="toc">
+            <ul class="toc-list">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#design-challenge">Design Challenge</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#outcome">Outcome</a></li>
+                <li><a href="#design-process">Design Process</a></li>
+                <li><a href="#user-testing">User Testing</a></li>
+                <li><a href="#new-requirements">New Requirements</a></li>
+                <li><a href="#final-iterations">Final Iterations</a></li>
+                <li><a href="#reflection">Reflection</a></li>
+            </ul>
+        </nav>
+
+        <article class="case-study">
+            <header class="case-study-header">
+                <h1>MongoDB Private Link</h1>
+                <p class="case-study-meta">Enabling customers to connect to MongoDB products securely.</p>
+            </header>
+
+            <figure class="case-study-image rounded-img">
+                <img src="../assets/Project 3/image 0.gif" alt="MongoDB Private Link" style="object-fit: contain;">
+            </figure>
+
+            <div class="case-study-content">
+                <!-- Overview -->
+                <section id="overview" class="case-study-section">
+                    <h2>Summary</h2>
+                    <p>
+                        MongoDB is an open-source, no SQL database platform that offers a variety of products to help companies manage their hu(mongo)us amounts of data. As a product design intern, I created a high-fidelity Figma prototype to describe a smooth, easy-to-use private endpoint creation and connection experience that would allow customers to securely use MongoDB products.
+                    </p>
+                    <div class="case-study-details">
+                        <div class="detail">
+                            <h3>Role</h3>
+                            <p>Product Design Intern</p>
+                        </div>
+                        <div class="detail">
+                            <h3>Timeline</h3>
+                            <p>3 months; <a href="https://www.mongodb.com/docs/atlas/security-configure-private-endpoints/" target="_blank" rel="noopener">Launched</a></p>
+                        </div>
+                        <div class="detail">
+                            <h3>Team</h3>
+                            <p>Individual with help from MongoDB Atlas product design, product management, and engineering teams</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Problem -->
+                <section id="problem" class="case-study-section">
+                    <span class="section-label">Problem</span>
+                    <h2>Customers can't use MongoDB products.</h2>
+                    <p>
+                        MongoDB regularly communicates with its users through a custom feedback forum. Here, we found that many users (56, to be exact) wanted to use the company's newest products, Atlas Data Lake (ADL) and Online Archive (OA). Yet, due to security concerns, they could not use these MongoDB products.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 3/image 1.png" alt="User feedback forum showing requests">
+                </figure>
+
+                <!-- Design Challenge -->
+                <section id="design-challenge" class="case-study-section">
+                    <span class="section-label">Design Challenge</span>
+                    <h2>How might we allow users to connect securely to MongoDB products?</h2>
+                </section>
+
+                <!-- Solution -->
+                <section id="solution" class="case-study-section">
+                    <span class="section-label">Solution</span>
+                    <h2>Create a new private endpoint.</h2>
+                    <p>
+                        Most users will begin with this step, creating a new AWS private endpoint through MongoDB's setup wizard. In a few steps, users can create a new endpoint to connect to our products securely.
+                    </p>
+                </section>
+
+                <figure class="case-study-image rounded-img">
+                    <img src="../assets/Project 3/image 2.png" alt="Create new private endpoint flow">
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>Add an existing endpoint.</h2>
+                    <p>
+                        Sometimes, users will have already created an endpoint in AWS. They can easily add existing endpoints to MongoDB's service.
+                    </p>
+                </section>
+
+                <figure class="case-study-image rounded-img">
+                    <img src="../assets/Project 3/image 3.png" alt="Add existing endpoint flow">
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>Connect using your endpoints.</h2>
+                    <p>
+                        Once a user has endpoints, they can connect to MongoDB using these private endpoints.
+                    </p>
+                </section>
+
+                <figure class="case-study-image no-radius">
+                    <img src="../assets/Project 3/image 4.png" alt="Connect using endpoints">
+                </figure>
+
+                <!-- Outcome -->
+                <section id="outcome" class="case-study-section">
+                    <span class="section-label">Outcome</span>
+                    <h2>A step-by-step process that allows users to connect to MongoDB products effortlessly.</h2>
+                    <p>
+                        By designing a private endpoint creation and connection process that is simple and quick, users can spend less time connecting and more time actually utilizing MongoDB's powerful products.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 3/image 5.png" alt="Final outcome">
+                </figure>
+
+                <!-- Design Process -->
+                <section id="design-process" class="case-study-section">
+                    <span class="section-label">Design Process</span>
+                    <h2>Creating a user flow.</h2>
+                    <p>
+                        Since we knew what users wanted through the feedback forum, my first step as the primary designer on this project was to collaborate with engineers to figure out how we could allow users to connect to MongoDB products using AWS's Private Link service. I took notes, made diagrams, and user flows to break down a highly technical process into steps everyday users could understand.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 3/image 6.png" alt="User flow diagram">
+                </figure>
+
+                <section class="case-study-section">
+                    <span class="section-label">Early Iterations</span>
+                    <h2>Translating the user flow into an interface.</h2>
+                    <p>
+                        Once I created a user flow, it was time to translate these steps into a user interface. I used design components like forms, tables, modals, and radio buttons to construct the interface. I applied MongoDB's design system to each component to ensure consistency amongst all MongoDB products and services.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 3/image 8.png" alt="Early iterations">
+                </figure>
+
+                <section class="case-study-section">
+                    <span class="section-label">Rapid Ideation</span>
+                    <h2>Design jam.</h2>
+                    <p>
+                        Every week, my design manager hosts a design collab session (basically a design jam) where all designers on our team share our work for informal critiques. I presented my designs, got feedback, and then we all jumped into my Figma file to iterate in real time. Here are just a few of the ideas we explored.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 3/image 9.png" alt="Design jam explorations">
+                </figure>
+
+                <!-- User Testing -->
+                <section id="user-testing" class="case-study-section">
+                    <span class="section-label">User Testing & Insights</span>
+                    <h2>Validating my designs.</h2>
+                    <p>
+                        Once I had a complete Figma prototype, I tested it with users through 1-hr moderated interviews. Before the interviews, I prepared a brief describing my goals. I also added instructions for tasks for the users to complete in the prototype, then asked users to reflect on their experience.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 3/image 10.png" alt="User testing setup">
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>Key insights</h2>
+                    <ol>
+                        <li><strong>Users are experienced.</strong><br>Users took 3.6 seconds on average to find the private endpoint tab. Many have already created private endpoints for another popular MongoDB feature called clusters before.</li>
+                        <li><strong>Users learn by doing.</strong><br>Users spent very little time reading instructions. Instead they were focused on completing their task. They relied on incorrect form validation or other visual error messages to complete tasks.</li>
+                        <li><strong>Users are excited for this feature!</strong><br>Users couldn't wait for this new feature, and were touched that we had listened to and were developing this feature based on their feedback.</li>
+                    </ol>
+                </section>
+
+                <!-- New Requirements -->
+                <section id="new-requirements" class="case-study-section">
+                    <span class="section-label">Staying Flexible</span>
+                    <h2>New engineering requirements.</h2>
+                    <p>
+                        I was presenting my designs to the engineering team for feedback almost every week. Halfway through the project, engineers discovered a few more requirements through a Proof of Concept (POC). These changes required me to redo my user flow and designs. This taught me to be flexible in my designs and forced me to learn shortcuts to work fast in Figma to adapt to these changes.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 3/image 11.png" alt="New engineering requirements">
+                </figure>
+
+                <section class="case-study-section">
+                    <span class="section-label">Zooming In On Design Changes</span>
+                    <h2>"Add Existing Endpoint" Option.</h2>
+                    <p>
+                        It was discovered that users could also add an existing endpoint. I created a new user flow and empty state for this action.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 3/image 12.png" alt="Add existing endpoint option">
+                </figure>
+
+                <section class="case-study-section">
+                    <h2>Two Different Tables.</h2>
+                    <p>
+                        Because endpoints for different MongoDB products had significantly different attributes, they could not be shown in the same page. I ideated on many concepts before deciding to use a toggle to display the two tables.
+                    </p>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 3/image 13.png" alt="Two different tables exploration">
+                </figure>
+
+                <!-- Final Iterations -->
+                <section id="final-iterations" class="case-study-section">
+                    <span class="section-label">Final Iterations</span>
+                    <h2>Adding the finishing touches.</h2>
+                    <ol>
+                        <li><strong>Improving table layout</strong></li>
+                    </ol>
+                </section>
+
+                <div class="case-study-gallery">
+                    <figure>
+                        <img src="../assets/Project 3/image 14.png" alt="Improved table layout">
+                    </figure>
+                    <figure>
+                        <img src="../assets/Project 3/proposed design change.png" alt="Proposed design change">
+                    </figure>
+                </div>
+
+                <section class="case-study-section">
+                    <ol start="2">
+                        <li><strong>Using a banner to encourage users to connect</strong></li>
+                    </ol>
+                </section>
+
+                <figure class="case-study-image">
+                    <img src="../assets/Project 3/image 15.png" alt="Banner design">
+                </figure>
+
+                <section class="case-study-section">
+                    <ol start="3">
+                        <li><strong>Numbering when there are more than 3 steps</strong></li>
+                    </ol>
+                </section>
+
+                <figure class="case-study-image small">
+                    <img src="../assets/Project 3/image 16.png" alt="Step numbering">
+                </figure>
+
+                <section class="case-study-section">
+                    <span class="section-label">More User Testing</span>
+                    <h2>Validating these design updates.</h2>
+                    <p>
+                        After some major design changes, I needed to run these by our users again. The new changes tested well with users and none of them had any trouble creating and connecting using an endpoint. My designs were good to go.
+                    </p>
+                </section>
+
+                <section class="case-study-section">
+                    <span class="section-label">The Outcome</span>
+                    <h2>A step-by-step process that allows users to connect to MongoDB products effortlessly.</h2>
+                    <p>
+                        With engineers, designers, and users keyed in through every step of the process (from ideation to the final iterations), this Private Link feature was able to be launched.
+                    </p>
+                </section>
+
+                <div class="figma-embed">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 12px;" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FowgVKMikAELP8cKSACY9Rw%3Fkind%3Dproto%26node-id%3D239-67469%26page-id%3D239%253A64554%26scaling%3Dscale-down-width%26starting-point-node-id%3D239%253A67469" allowfullscreen></iframe>
+                </div>
+
+                <!-- Reflection -->
+                <section id="reflection" class="case-study-section">
+                    <span class="section-label">Reflection</span>
+                    <h2>What I learned.</h2>
+                    <p>
+                        <strong>Managing changing requirements</strong><br>
+                        With such a technical project, much of my designs depended on engineering requirements which changed a lot while I was working on this project. Managing these requirements meant constant Slack communication and frequent engineering checkpoints.
+                    </p>
+                    <p>
+                        <strong>Design unites people</strong><br>
+                        Throughout my project I heavily collaborated with copywriters, engineers, fellow designers, marketers, and product managers. It was so awesome to see how design could create a vision, a blueprint, upon which an idea for a feature can become reality.
+                    </p>
+                    <p>
+                        <strong>Asking the right questions</strong><br>
+                        In this project, there were many decisions to make: from how many steps should be in the endpoint creation wizard to whether a description should be added to product options. My mentor stressed that I take ownership of my design, prompting me to talk through the pros and cons of each design variant. This helped me improve my design thinking skills and forced me to asking the right questions.
+                    </p>
+                </section>
+            </div>
+
+            <nav class="case-study-nav">
+                <a href="/projects/project-2.html" class="nav-prev">
+                    <div class="nav-text">
+                        <span>Previous</span>
+                        <strong>Color Writing on Kindle</strong>
+                    </div>
+                    <div class="nav-thumb">
+                        <img src="../assets/Project 2/image 3.png" alt="Color Writing on Kindle">
+                    </div>
+                </a>
+                <a href="/projects/project-4.html" class="nav-next">
+                    <div class="nav-text">
+                        <span>Next</span>
+                        <strong>MyDiya</strong>
+                    </div>
+                    <div class="nav-thumb">
+                        <img src="../assets/Project 4/MyDiya thumbnail.png" alt="MyDiya">
+                    </div>
+                </a>
+            </nav>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <a href="/">© 2026 Elise Nguyen</a>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        navToggle.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            navToggle.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                navToggle.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            });
+        });
+
+        const progressBar = document.querySelector('.progress-bar');
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            progressBar.style.width = scrollPercent + '%';
+
+            // Hide nav when scrolling, show only at top
+            const nav = document.querySelector('.nav');
+            if (scrollTop > 100) {
+                nav.classList.add('hidden');
+            } else {
+                nav.classList.remove('hidden');
+            }
+
+            if (scrollTop > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Lightbox with carousel functionality
+        const lightbox = document.createElement('div');
+        lightbox.className = 'lightbox';
+        lightbox.innerHTML = `
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</button>
+            <img src="" alt="">
+            <button class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</button>
+        `;
+        document.body.appendChild(lightbox);
+
+        const lightboxImg = lightbox.querySelector('img');
+        const lightboxClose = lightbox.querySelector('.lightbox-close');
+        const lightboxPrev = lightbox.querySelector('.lightbox-prev');
+        const lightboxNext = lightbox.querySelector('.lightbox-next');
+
+        const allImages = Array.from(document.querySelectorAll('.case-study-gallery img, .case-study-image img, .case-study-hero img, .photo-gallery img'));
+        let currentIndex = 0;
+
+        function showImage(index) {
+            currentIndex = index;
+            if (currentIndex < 0) currentIndex = allImages.length - 1;
+            if (currentIndex >= allImages.length) currentIndex = 0;
+            lightboxImg.src = allImages[currentIndex].src;
+            lightboxImg.alt = allImages[currentIndex].alt;
+        }
+
+        allImages.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                showImage(index);
+                lightbox.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightboxPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showImage(currentIndex - 1);
+        });
+
+        lightboxNext.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showImage(currentIndex + 1);
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target === lightboxClose) {
+                lightbox.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('open')) return;
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('open');
+                document.body.style.overflow = '';
+            } else if (e.key === 'ArrowLeft') {
+                showImage(currentIndex - 1);
+            } else if (e.key === 'ArrowRight') {
+                showImage(currentIndex + 1);
+            }
+        });
+
+        // Table of Contents active state
+        const tocLinks = document.querySelectorAll('.toc-list a');
+        const sections = document.querySelectorAll('.case-study-section[id]');
+
+        function updateTocActive() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateTocActive);
+        updateTocActive();
+    </script>
+</body>
+</html>
