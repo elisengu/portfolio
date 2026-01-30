@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A minimal, clean portfolio website inspired by kaijordan.com.
+A minimal, clean portfolio website.
 
 ## Setup
 

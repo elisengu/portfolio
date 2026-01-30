@@ -1743,11 +1743,26 @@ blockquote.green-quote {
 }
 
 .currently-reading-box .book-quote {
-    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
     font-style: italic;
-    color: #4a9c6d;
-    line-height: 1.5;
     margin: 0;
+}
+
+/* About page bio - matches homepage project subtext */
+.about-bio {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.about-bio a {
+    color: #4a9c6d !important;
+    text-decoration: none;
+}
+
+.about-bio a:hover {
+    opacity: 0.7;
 }
 
 @media (max-width: 480px) {
