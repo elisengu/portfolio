@@ -1743,9 +1743,10 @@ blockquote.green-quote {
 }
 
 .currently-reading-box .book-quote {
-    color: var(--color-text-secondary);
-    line-height: 1.7;
+    font-size: 0.85rem;
     font-style: italic;
+    color: #4a9c6d;
+    line-height: 1.5;
     margin: 0;
 }
 
