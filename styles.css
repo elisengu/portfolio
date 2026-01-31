@@ -375,15 +375,19 @@ main {
 /* Sparkle decoration */
 .sparkle {
     display: inline;
-    margin-left: 0.3rem;
+    margin-left: 0.75rem;
     font-size: 0.8em;
     animation: sparkle 2s ease-in-out infinite;
+}
+
+.company-wrap {
     white-space: nowrap;
 }
 
 @media (max-width: 768px) {
     .sparkle {
-        font-size: 1em;
+        font-size: 1.1em;
+        margin-left: 0.4rem;
     }
 }
 
