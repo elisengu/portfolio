@@ -374,10 +374,17 @@ main {
 
 /* Sparkle decoration */
 .sparkle {
-    display: inline-block;
-    margin-left: 0.5rem;
+    display: inline;
+    margin-left: 0.3rem;
     font-size: 0.8em;
     animation: sparkle 2s ease-in-out infinite;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .sparkle {
+        font-size: 1em;
+    }
 }
 
 @keyframes sparkle {
