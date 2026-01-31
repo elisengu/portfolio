@@ -1658,6 +1658,14 @@ blockquote.green-quote {
         grid-template-columns: 1fr 1fr;
     }
 
+    /* Remove fixed heights on mobile to prevent cutoff */
+    .case-study-gallery.top-align img,
+    .case-study-gallery.top-align.tall img,
+    .case-study-gallery.bottom-align img {
+        height: auto;
+        object-position: center;
+    }
+
     .case-study-section h2 {
         font-size: 1.25rem;
     }
