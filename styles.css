@@ -433,14 +433,13 @@ main {
 }
 
 .work-image {
-    background: rgba(255, 255, 255, 0.5);
+    background: transparent;
     border-radius: 12px;
     aspect-ratio: 4/3;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border: 1px solid var(--color-border);
 }
 
 .work-image img {
@@ -1168,6 +1167,8 @@ main {
 
 .case-study-gallery figure {
     margin: 0;
+    overflow: hidden;
+    border-radius: 12px;
 }
 
 .case-study-gallery.top-align {
@@ -1384,7 +1385,7 @@ blockquote.green-quote {
 .press-item img {
     width: 100%;
     height: 100%;
-    border-radius: 8px;
+    border-radius: 12px;
     object-fit: cover;
 }
 
@@ -1410,7 +1411,7 @@ blockquote.green-quote {
 .photo-gallery img {
     width: 100%;
     height: 100%;
-    border-radius: 8px;
+    border-radius: 12px;
     object-fit: cover;
     cursor: pointer;
 }
@@ -1493,7 +1494,7 @@ blockquote.green-quote {
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .lightbox-close {
@@ -1609,7 +1610,7 @@ blockquote.green-quote {
     width: 100%;
     aspect-ratio: 16/10;
     background: rgba(255, 255, 255, 0.5);
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--color-border);
 }
@@ -1652,7 +1653,7 @@ blockquote.green-quote {
 
     .case-study-hero {
         margin-bottom: 2.5rem;
-        border-radius: 8px;
+        border-radius: 12px;
     }
 
     .case-study-details {
@@ -1795,4 +1796,71 @@ blockquote.green-quote {
     .currently-reading-box .book-content img {
         width: 100px;
     }
+}
+
+/* Image loading optimization */
+img {
+    content-visibility: auto;
+}
+
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+img[loading="lazy"].loaded,
+img[loading="lazy"]:not([src=""]) {
+    opacity: 1;
+}
+
+/* Picture element fix for work cards */
+.work-image picture {
+    display: contents;
+}
+
+.work-image picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Picture element fix for case study images */
+.case-study-image picture,
+.case-study-gallery figure picture,
+.case-study-hero picture {
+    display: contents;
+}
+
+.case-study-gallery figure picture img {
+    border-radius: 12px;
+}
+
+.case-study-image picture img {
+    border-radius: 12px;
+}
+
+
+/* Blur-up placeholder effect */
+img[data-placeholder] {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img[data-placeholder].placeholder-loading {
+    filter: blur(10px);
+    transform: scale(1.02);
+}
+
+img[data-placeholder].placeholder-loaded {
+    filter: blur(0);
+    transform: scale(1);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Make videos clickable */
+.case-study-image video,
+.case-study-hero video {
+    cursor: pointer;
 }
