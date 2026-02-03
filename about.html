@@ -51,10 +51,7 @@
         <section class="about-page">
             <div class="about-hero">
                 <div class="about-image">
-                    <picture>
-                <source srcset="assets/About/profile pic.webp" type="image/webp">
-                <img loading="lazy" decoding="async" src="assets/About/profile pic.jpg" data-placeholder="assets/About/profile pic-placeholder.webp" alt="Elise Nguyen">
-            </picture>
+                    <img loading="lazy" src="assets/About/profile pic.jpg" alt="Elise Nguyen">
                 </div>
                 <div class="about-intro">
                     <h1>About me</h1>
@@ -65,10 +62,7 @@
                     <div class="currently-reading-box" style="margin-top: 1.5rem;">
                         <h3>📚 Currently Reading</h3>
                         <div class="book-content">
-                            <picture>
-                <source srcset="assets/About/currently reading.webp" type="image/webp">
-                <img loading="lazy" decoding="async" src="assets/About/currently reading.jpg" data-placeholder="assets/About/currently reading-placeholder.webp" alt="If Cats Disappeared from the World book cover">
-            </picture>
+                            <img loading="lazy" src="assets/About/currently reading.jpg" alt="If Cats Disappeared from the World book cover">
                             <div class="book-info">
                                 <p class="book-title">If Cats Disappeared from the World</p>
                                 <p class="book-author">by Genki Kawamura</p>
@@ -103,15 +97,6 @@
     </button>
 
     <script>
-        // Image fade-in on load
-        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-            if (img.complete) {
-                img.classList.add('loaded');
-            } else {
-                img.addEventListener('load', () => img.classList.add('loaded'));
-            }
-        });
-
         const navToggle = document.querySelector('.nav-toggle');
         const mobileMenu = document.querySelector('.mobile-menu');
         
@@ -161,23 +146,6 @@
 
         backToTop.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // Blur-up placeholder effect
-        document.querySelectorAll('img[data-placeholder]').forEach(img => {
-            const placeholder = img.dataset.placeholder;
-            img.style.backgroundImage = `url('${placeholder}')`;
-            img.classList.add('placeholder-loading');
-            
-            if (img.complete) {
-                img.classList.remove('placeholder-loading');
-                img.classList.add('placeholder-loaded');
-            } else {
-                img.addEventListener('load', () => {
-                    img.classList.remove('placeholder-loading');
-                    img.classList.add('placeholder-loaded');
-                });
-            }
         });
     </script>
 </body>

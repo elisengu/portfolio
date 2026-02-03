@@ -21,10 +21,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/favicon.png">
     
-    <!-- Preload critical images -->
-    <link rel="preload" as="image" href="/assets/Project%201/thumbnail.png">
-    <link rel="preload" as="image" href="/assets/Project%202/image%203.png">
-    
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,10 +57,7 @@
         <section id="work" class="work-section">
             <a href="/work/shop-goodreads" class="work-card">
                 <div class="work-image">
-                    <picture>
-                <source srcset="assets/Project 1/thumbnail.webp" type="image/webp">
-                <img loading="lazy" decoding="async" src="assets/Project 1/thumbnail.png" data-placeholder="assets/Project 1/thumbnail-placeholder.webp" alt="Shop Goodreads on Amazon" class="thumb-goodreads">
-            </picture>
+                    <img loading="lazy" src="assets/Project 1/thumbnail.png" alt="Shop Goodreads on Amazon" class="thumb-goodreads">
                 </div>
                 <div class="work-content">
                     <h2>Shop Goodreads on Amazon</h2>
@@ -77,10 +70,7 @@
 
             <a href="/work/color-writing" class="work-card">
                 <div class="work-image">
-                    <picture>
-                <source srcset="assets/Project 2/image 3.webp" type="image/webp">
-                <img loading="lazy" decoding="async" src="assets/Project 2/image 3.png" data-placeholder="assets/Project 2/image 3-placeholder.webp" alt="Color Writing on Kindle">
-            </picture>
+                    <img loading="lazy" src="assets/Project 2/image 3.png" alt="Color Writing on Kindle">
                 </div>
                 <div class="work-content">
                     <h2>Color Writing on Kindle</h2>
@@ -93,10 +83,7 @@
 
             <a href="/work/mongodb-privatelink" class="work-card">
                 <div class="work-image">
-                    <picture>
-                <source srcset="assets/Project 3/private link thumbnail.webp" type="image/webp">
-                <img loading="lazy" decoding="async" src="assets/Project 3/private link thumbnail.jpg" data-placeholder="assets/Project 3/private link thumbnail-placeholder.webp" alt="MongoDB Private Link">
-            </picture>
+                    <img loading="lazy" src="assets/Project 3/private link thumbnail.jpg" alt="MongoDB Private Link">
                 </div>
                 <div class="work-content">
                     <h2>MongoDB Private Link</h2>
@@ -109,10 +96,7 @@
 
             <a href="/work/mydiya" class="work-card">
                 <div class="work-image">
-                    <picture>
-                <source srcset="assets/Project 4/MyDiya thumbnail.webp" type="image/webp">
-                <img loading="lazy" decoding="async" src="assets/Project 4/MyDiya thumbnail.png" data-placeholder="assets/Project 4/MyDiya thumbnail-placeholder.webp" alt="MyDiya" class="thumb-mydiya">
-            </picture>
+                    <img loading="lazy" src="assets/Project 4/MyDiya thumbnail.png" alt="MyDiya" class="thumb-mydiya">
                 </div>
                 <div class="work-content">
                     <h2>MyDiya</h2>
@@ -125,10 +109,7 @@
 
             <a href="/work/mongodb-billing" class="work-card">
                 <div class="work-image">
-                    <picture>
-                <source srcset="assets/Project 5/billing thumbnail.webp" type="image/webp">
-                <img loading="lazy" decoding="async" src="assets/Project 5/billing thumbnail.png" data-placeholder="assets/Project 5/billing thumbnail-placeholder.webp" alt="MongoDB Billing" class="thumb-billing">
-            </picture>
+                    <img loading="lazy" src="assets/Project 5/billing thumbnail.png" alt="MongoDB Billing" class="thumb-billing">
                 </div>
                 <div class="work-content">
                     <h2>MongoDB Billing</h2>
@@ -141,10 +122,7 @@
 
             <a href="/work/disney" class="work-card">
                 <div class="work-image">
-                    <picture>
-                <source srcset="assets/Project 6/disney thumbnail.webp" type="image/webp">
-                <img loading="lazy" decoding="async" src="assets/Project 6/disney thumbnail.png" data-placeholder="assets/Project 6/disney thumbnail-placeholder.webp" alt="Disney" class="thumb-disney">
-            </picture>
+                    <img loading="lazy" src="assets/Project 6/disney thumbnail.png" alt="Disney" class="thumb-disney">
                 </div>
                 <div class="work-content">
                     <h2>Disney</h2>
@@ -178,15 +156,6 @@
     </button>
 
     <script>
-        // Image fade-in on load
-        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-            if (img.complete) {
-                img.classList.add('loaded');
-            } else {
-                img.addEventListener('load', () => img.classList.add('loaded'));
-            }
-        });
-
         // Mobile menu
         const navToggle = document.querySelector('.nav-toggle');
         const mobileMenu = document.querySelector('.mobile-menu');
@@ -238,23 +207,6 @@
 
         backToTop.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // Blur-up placeholder effect
-        document.querySelectorAll('img[data-placeholder]').forEach(img => {
-            const placeholder = img.dataset.placeholder;
-            img.style.backgroundImage = `url('${placeholder}')`;
-            img.classList.add('placeholder-loading');
-            
-            if (img.complete) {
-                img.classList.remove('placeholder-loading');
-                img.classList.add('placeholder-loaded');
-            } else {
-                img.addEventListener('load', () => {
-                    img.classList.remove('placeholder-loading');
-                    img.classList.add('placeholder-loaded');
-                });
-            }
         });
     </script>
 </body>

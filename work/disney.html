@@ -55,10 +55,7 @@
             </header>
 
             <div class="case-study-hero no-border">
-                <picture>
-                <source srcset="../assets/Project 6/image.webp" type="image/webp">
-                <img loading="lazy" decoding="async" src="../assets/Project 6/image.png" data-placeholder="../assets/Project 6/image-placeholder.webp" alt="Disney" style="object-position: 55% center;">
-            </picture>
+                <img loading="lazy" src="../assets/Project 6/image.png" alt="Disney" style="object-position: 55% center;">
             </div>
 
             <div class="case-study-content">
@@ -88,10 +85,7 @@
                         <strong>MongoDB Billing</strong>
                     </div>
                     <div class="nav-thumb">
-                        <picture>
-                <source srcset="../assets/Project 5/billing thumbnail.webp" type="image/webp">
-                <img loading="lazy" decoding="async" src="../assets/Project 5/billing thumbnail.png" data-placeholder="../assets/Project 5/billing thumbnail-placeholder.webp" alt="MongoDB Billing">
-            </picture>
+                        <img loading="lazy" src="../assets/Project 5/billing thumbnail.png" alt="MongoDB Billing">
                     </div>
                 </a>
                 <a href="/work/shop-goodreads" class="nav-next">
@@ -100,10 +94,7 @@
                         <strong>Shop Goodreads on Amazon</strong>
                     </div>
                     <div class="nav-thumb">
-                        <picture>
-                <source srcset="../assets/Project 1/thumbnail.webp" type="image/webp">
-                <img loading="lazy" decoding="async" src="../assets/Project 1/thumbnail.png" data-placeholder="../assets/Project 1/thumbnail-placeholder.webp" alt="Shop Goodreads on Amazon">
-            </picture>
+                        <img loading="lazy" src="../assets/Project 1/thumbnail.png" alt="Shop Goodreads on Amazon">
                     </div>
                 </a>
             </nav>
@@ -121,15 +112,6 @@
     </button>
 
     <script>
-        // Image fade-in on load
-        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-            if (img.complete) {
-                img.classList.add('loaded');
-            } else {
-                img.addEventListener('load', () => img.classList.add('loaded'));
-            }
-        });
-
         const navToggle = document.querySelector('.nav-toggle');
         const mobileMenu = document.querySelector('.mobile-menu');
         
@@ -182,7 +164,7 @@
         lightbox.innerHTML = `
             <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
             <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</button>
-            <img loading="lazy" decoding="async" src="" alt="">
+            <img loading="lazy" src="" alt="">
             <button class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</button>
             <div class="lightbox-counter"></div>
         `;
@@ -236,23 +218,6 @@
             }
             if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
             if (e.key === 'ArrowRight') showImage(currentIndex + 1);
-        });
-
-        // Blur-up placeholder effect
-        document.querySelectorAll('img[data-placeholder]').forEach(img => {
-            const placeholder = img.dataset.placeholder;
-            img.style.backgroundImage = `url('${placeholder}')`;
-            img.classList.add('placeholder-loading');
-            
-            if (img.complete) {
-                img.classList.remove('placeholder-loading');
-                img.classList.add('placeholder-loaded');
-            } else {
-                img.addEventListener('load', () => {
-                    img.classList.remove('placeholder-loading');
-                    img.classList.add('placeholder-loaded');
-                });
-            }
         });
     </script>
 </body>
